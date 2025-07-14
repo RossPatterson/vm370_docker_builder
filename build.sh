@@ -28,7 +28,7 @@ mv ./disks/*.cckd .
 (cd /opt/hercules/vm370; hercules -f hercules.conf -d >/dev/null 2>/dev/null &)
 
 # YATA UBUNTU
-wget -nv https://github.com/rosspatterson/yata/releases/download/v1.2.7/YATA-Ubuntu.zip
+wget -nv https://github.com/rosspatterson/yata/releases/download/v1.2.8/YATA-Ubuntu.zip
 unzip YATA-Ubuntu.zip
 chmod +x YATA-Ubuntu/yata
 mv YATA-Ubuntu/yata /usr/local/bin
@@ -36,7 +36,7 @@ rm -r YATA-Ubuntu
 rm YATA-Ubuntu.zip
 
 # YATA CMS
-wget -nv https://github.com/rosspatterson/yata/releases/download/v1.2.7/YATA-CMS.zip
+wget -nv https://github.com/rosspatterson/yata/releases/download/v1.2.8/YATA-CMS.zip
 unzip YATA-CMS.zip
 mkdir io
 mv YATA-CMS/yatabin.aws io

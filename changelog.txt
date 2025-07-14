@@ -1,5 +1,7 @@
 VM/370 Docker Container - Changelog
 ===================================
+1.6.5 - YATA v1.2.8
+
 1.6.4 - Don't replace the GCCBRX DASD from VM/370 CE with the one from bREXX 1.0.0.
 
 1.6.3 - YATA v1.2.7
