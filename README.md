@@ -7,7 +7,7 @@ The Docker images are at https://hub.docker.com/repository/docker/rosspatterson/
 See this repository's release tab for the Dockerfile build source and the VM/370 DASD files.
 
 # History
-- latest -> 1.6.5
+- latest -> 1.6.6
 - Version 1.6.0 is built from the VM/370 Community Edition v1.1.2 distribution.
 - Version 1.5.3 is built from the VM/370 Community Edition v1.1.0 distribution.
 - Version 1.3.4 corresponds to Six Pack 1.3 Beta 3.

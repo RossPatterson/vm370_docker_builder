@@ -8,7 +8,7 @@ set -e
 set -x
 
 # HercControl
-wget -nv https://github.com/adesutherland/HercControl/releases/download/v1.1.0/HercControl-Ubuntu.zip
+wget -nv https://github.com/rosspatterson/HercControl/releases/download/v1.1.2/HercControl-Ubuntu.zip
 unzip HercControl-Ubuntu.zip
 chmod +x HercControl-Ubuntu/herccontrol
 mv HercControl-Ubuntu/herccontrol /usr/local/bin
