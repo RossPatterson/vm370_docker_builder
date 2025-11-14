@@ -1,5 +1,8 @@
 VM/370 Docker Container - Changelog
 ===================================
+1.6.7 - Add Python.
+        Replace HercControl 1.1.2 with PyHercControl 1.1.2.
+
 1.6.6 - HercControl 1.1.2 from Ross Patterson's repository, to display full console when timed out.
 
 1.6.5 - YATA v1.2.8

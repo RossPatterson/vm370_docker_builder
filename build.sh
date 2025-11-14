@@ -8,12 +8,9 @@ set -e
 set -x
 
 # HercControl
-wget -nv https://github.com/rosspatterson/HercControl/releases/download/v1.1.2/HercControl-Ubuntu.zip
-unzip HercControl-Ubuntu.zip
-chmod +x HercControl-Ubuntu/herccontrol
-mv HercControl-Ubuntu/herccontrol /usr/local/bin
-rm -r HercControl-Ubuntu
-rm HercControl-Ubuntu.zip
+wget -nv https://raw.githubusercontent.com/RossPatterson/PyHercControl/refs/tags/v1.1.2/PyHercControl/src/herccontrol
+chmod +x herccontrol
+mv herccontrol /usr/local/bin
 
 # Remove Shadow Files
 mkdir -p ./disks/shadows # Hercules won't run sf- if the shadow dir doesn't exist.
