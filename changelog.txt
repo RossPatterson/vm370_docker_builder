@@ -1,5 +1,7 @@
 VM/370 Docker Container - Changelog
 ===================================
+2.0.0 - Replace Hercules 3.13 (spinhawk) with SDL Hyperion 4.9.1.
+
 1.6.7 - Add Python.
         Replace HercControl 1.1.2 with PyHercControl 1.1.2.
 

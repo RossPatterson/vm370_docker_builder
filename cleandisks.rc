@@ -1,0 +1,8 @@
+* Hercules runs the commands in this file upon startup.
+
+* Merge the shadow files into the base DASD files
+sf-* force
+
+pause 20
+
+exit

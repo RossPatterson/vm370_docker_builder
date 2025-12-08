@@ -1,0 +1,4 @@
+* Hercules runs the commands in this file upon startup.
+
+* Start VM.  Everything else will be done in build.sh
+ipl 6a1
