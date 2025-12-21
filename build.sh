@@ -7,14 +7,19 @@ set -e
 # Show the commands
 set -x
 
-# HercControl
+# Install HercControl
 wget -nv https://raw.githubusercontent.com/RossPatterson/PyHercControl/refs/tags/v1.1.2/PyHercControl/src/herccontrol
 chmod +x herccontrol
 mv herccontrol /usr/local/bin
 
+# Add Hercules to paths
+. /opt/hercules/vm370/setup.sh
+
+
 # Remove Shadow Files
 mkdir -p ./disks/shadows # Hercules won't run sf- if the shadow dir doesn't exist.
 hercules -f cleandisks.conf -d >/dev/null 2>/dev/null &
+sleep 5    # Let Hercules get the HTTP server started
 herccontrol "sf-* force" -w "HHCCD092I"
 herccontrol "exit"
 
@@ -45,7 +50,7 @@ herccontrol "ipl 6a1" -w "USER DSC LOGOFF AS AUTOLOG1"
 
 # LOGON MAINTC AND READ TAPE
 herccontrol "/cp disc" -w "^VM/370 Online"
-herccontrol "/logon maintc maintc" -w "^VM Community Edition V1 R1.2"
+herccontrol "/logon maintc maintc" -w "^VM Community Edition"
 herccontrol "/access (noprof" -w "^Ready;"
 herccontrol "/profile" -w "^Ready;"
 herccontrol "devinit 480 io/yatabin.aws" -w "^HHCPN098I"
@@ -61,13 +66,13 @@ herccontrol "/yata -v" -w "^Ready;"
 herccontrol "/logoff" -w "^VM/370 Online"
 
 # REBUILD CMS
-herccontrol "/logon maint cpcms" -w "^VM Community Edition V1 R1.2"
+herccontrol "/logon maint cpcms" -w "^VM Community Edition"
 herccontrol "/access (noprof" -w "^Ready;"
 herccontrol "/profile" -w "^Ready;"
 herccontrol "/NEWBREXX" -w "^Ready"
 herccontrol "/define storage 16m"  -w "CP ENTERED"
-herccontrol "/ipl 190 clear" -w "^VM Community Edition V1 R1.2"
-herccontrol "/savesys cms" -w "^VM Community Edition V1 R1.2"
+herccontrol "/ipl 190 clear" -w "^VM Community Edition"
+herccontrol "/savesys cms" -w "^VM Community Edition"
 herccontrol "/" -w "^Ready;"
 herccontrol "/logoff" -w "^VM/370 Online"
 
