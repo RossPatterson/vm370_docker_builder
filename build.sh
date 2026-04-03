@@ -15,6 +15,19 @@ mv herccontrol /usr/local/bin
 # Add Hercules to paths
 . /opt/hercules/vm370/setup.sh
 
+# Install vma, the Linux VMARC tool
+wget -nv https://www.homerow.net/files/vma-22.204a.tar.gz
+tar -xzf vma-22.204a.tar.gz
+cd vma-22.204a
+make cli
+chmod +x src/vma
+mv src/vma /usr/local/bin
+cd ..
+rm -rf vma-22.204a vma-22.204a.tar.gz
+/usr/local/bin/vma -V
+
+# Add Hercules to paths
+. /opt/hercules/vm370/setup.sh
 
 # Remove Shadow Files
 mkdir -p ./disks/shadows # Hercules won't run sf- if the shadow dir doesn't exist.

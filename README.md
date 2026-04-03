@@ -7,7 +7,9 @@ The Docker images are at https://hub.docker.com/repository/docker/rosspatterson/
 See this repository's release tab for the Dockerfile build source and the VM/370 DASD files.
 
 # History
-- latest -> 1.6.8
+- latest -> 1.6.9
+- Version 1.6.9 adds Leland Lucius's "vma" Linux VMARC tool.
+- Version 1.6.8 fixes the Hercules Spinhawk syslog CGI.
 - Version 1.6.7 adds Python and switches to the Python version of the herccontrol tool.
 - Version 1.6.0 is built from the VM/370 Community Edition v1.1.2 distribution.
 - Version 1.5.3 is built from the VM/370 Community Edition v1.1.0 distribution.

@@ -1,6 +1,8 @@
 VM/370 Docker Container - Changelog
 ===================================
-1.6.8 - Build Hercules from source to pick up fix for SDL Hyperion issue #782.
+1.6.9 - Add Leland Lucius's "vma" for VMARC files.
+
+1.6.8 - Build Hercules Spinhawk from source to pick up fix for SDL Hyperion issue #782.
 
 1.6.7 - Add Python.
         Replace HercControl 1.1.2 with PyHercControl 1.1.2.

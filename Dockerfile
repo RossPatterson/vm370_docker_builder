@@ -72,6 +72,7 @@ COPY --from=0 /opt/hercules/vm370/* ./
 
 COPY --from=0 /usr/local/bin/herccontrol /usr/local/bin/herccontrol
 COPY --from=0 /usr/local/bin/yata /usr/local/bin/yata
+COPY --from=0 /usr/local/bin/vma /usr/local/bin/vma
 COPY --from=0 /usr/local/hercules/ /usr/local/hercules/
 
 EXPOSE      3270 8038 3505
