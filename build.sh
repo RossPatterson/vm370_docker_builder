@@ -8,7 +8,7 @@ set -e
 set -x
 
 # Install HercControl
-wget -nv https://raw.githubusercontent.com/RossPatterson/PyHercControl/refs/tags/v1.1.2/PyHercControl/src/herccontrol
+wget -nv https://raw.githubusercontent.com/RossPatterson/PyHercControl/refs/tags/v1.1.3/PyHercControl/src/herccontrol
 chmod +x herccontrol
 mv herccontrol /usr/local/bin
 
