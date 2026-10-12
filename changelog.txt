@@ -1,5 +1,7 @@
 VM/370 Docker Container - Changelog
 ===================================
+1.6.12 - Update PyHercControl to 1.1.4 to fix PyHercControl issue #2.
+
 1.6.11 - Add git.  How did we not have THAT???
 
 1.6.10 - Update PyHercControl to 1.1.3.
